@@ -91,9 +91,7 @@ def giant_squid_pt2():
                         board.won_at = number
 
         last_won = won.pop()
-        print(last_won.sum_of_won_board())
-        print(last_won.won_at)
-        print(last_won.won_at * last_won.sum_of_won_board())
+        return last_won.won_at * last_won.sum_of_won_board()
 
 
 def giant_squid_pt1():
