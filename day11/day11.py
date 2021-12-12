@@ -1,9 +1,6 @@
 def dumbo_pt1():
-
-
     with open('input', 'r') as f:
         grid = [list(map(int, list(x.strip()))) for x in f.readlines()]
-
 
         def flash(current_cell, already_flashed):
             sum = 1
@@ -33,11 +30,10 @@ def dumbo_pt1():
                 grid[c[0]][c[1]] = 0
         return total_flashes
 
-def dumbo_pt2():
 
+def dumbo_pt2():
     with open('input', 'r') as f:
         grid = [list(map(int, list(x.strip()))) for x in f.readlines()]
-
 
         def flash(current_cell, already_flashed):
             for direction in [(1, 0), (-1, 0), (0, -1), (0, 1), (1, -1), (1, 1), (-1, -1), (-1, 1)]:
